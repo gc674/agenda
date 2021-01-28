@@ -14,7 +14,6 @@ sql_agenda_table = """ CREATE TABLE IF NOT EXISTS agenda (
                                                                 telefon INTEGER); """
 
 
-
 def create_db(db_name, sql_table):
     '''se crează baza de date dacă nu există'''
     my_connection = sqlite3.connect(db_name)
@@ -45,7 +44,7 @@ def add_to_db(contact, sql_table, db_name=fisier_db):
     else:
         print('Se crează baza de date!')
         time.sleep(0.5)
-        create_db(db_name,sql_table)
+        create_db(db_name, sql_table)
         write_to_db(db_name, contact)
 
 
@@ -78,9 +77,11 @@ def read_from_db():
     '''se citește din baza de date'''
     pass
 
+
 def delete_from_db():
     '''se șterge din baza de date'''
     pass
+
 
 def add_entry():
     '''se va adăga datele unui nou contact: nume, prenume, companie, adresa de mail'''
@@ -98,15 +99,16 @@ def create_contact(lista=lista_contact):
             contact.append(c)
     add_to_db(contact, sql_table=sql_agenda_table)
 
+
 def meniu():
     '''meniul agendei'''
     print('''
     ^Agenda telefonică^
-    
+
     1. Adaugă un contact nou:
     2. Caută contact existent folosind: Numele
     3. Sterge un contact din agendă folosind: Numele
-    
+
     Pentru a opri programul folosiți litera e
     ''')
 
@@ -127,7 +129,6 @@ def meniu():
         print('Alegeți opțiunea corectă!')
 
     return a
-
 
 
 while True:
