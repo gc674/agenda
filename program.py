@@ -1,6 +1,3 @@
-# Exercitiul III
-# Realizati o agenda telefónica in Python. In fiecare intrare se vor salva date ale contactelor, cum ar fi nume, prenume,
-# companie, adresa de email. Agenda trebuie sa contina o functie de cautare, si sa se poata folosi din line de comanda.
 import os
 import time
 import sqlite3
@@ -16,14 +13,6 @@ sql_agenda_table = """ CREATE TABLE IF NOT EXISTS agenda (
                                                                 email VARCHAR(30),
                                                                 telefon INTEGER); """
 
-
-# sql_agenda_table = """ CREATE TABLE IF NOT EXISTS agenda (
-#                                                                 contact_id INTEGER PRIMARY KEY AUTOINCREMENT,
-#                                                                 nume VARCHAR(30),
-#                                                                 prenume VARCHAR(30),
-#                                                                 companie VARCHAR(30),
-#                                                                 email VARCHAR(30),
-#                                                                 telefon INTEGER); """
 
 
 def create_db(db_name, sql_table):
@@ -134,6 +123,8 @@ def meniu():
         query_entry(name)
         id = input('Ce id doriți să ștergeți?:')
         delete_entry(id)
+    else:
+        print('Alegeți opțiunea corectă!')
 
     return a
 
