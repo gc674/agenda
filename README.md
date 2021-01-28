@@ -1,5 +1,5 @@
 # Python phone agenda
-```commandline
+```
 Realizati o agenda telefónica in Python.
 a) în fiecare intrare se vor salva date ale contactelor, cum ar fi nume, prenume,
 companie, adresa de email.
