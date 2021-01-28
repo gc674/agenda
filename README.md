@@ -18,14 +18,17 @@ b) agenda trebuie sa contina o functie de cautare, si sa se poata folosi din lin
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+```
+Always work on progress.
+Pull requests are welcome. 
+For major changes, please open an issue first to discuss what you would like to change.
+```
 
 ## License
 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-##Language
-```python
+## Language
+```
 Romanian
 Sorry, translation to be added
-
 ```
